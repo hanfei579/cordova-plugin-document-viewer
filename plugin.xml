@@ -43,7 +43,7 @@
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
 
              <provider
-                android:name="android.support.v4.content.FileProvider"
+                android:name="de.sitewaerts.cordova.documentviewer.FileProvider"
                 android:authorities="$PACKAGE_NAME.DocumentViewerPlugin.fileprovider"
                 android:exported="false"
                 android:grantUriPermissions="true">
@@ -59,6 +59,9 @@
 
         <source-file
                 src="src/android/de/sitewaerts/cordova/documentviewer/DocumentViewerPlugin.java"
+                target-dir="src/de/sitewaerts/cordova/documentviewer"/>
+        <source-file
+                src="src/android/de/sitewaerts/cordova/documentviewer/FileProvider.java"
                 target-dir="src/de/sitewaerts/cordova/documentviewer"/>
      </platform>
 
