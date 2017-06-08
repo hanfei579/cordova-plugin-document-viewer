@@ -20,7 +20,7 @@ public class PdfActivity extends Activity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 	setContentView(getApplication().getResources().getIdentifier("activity_pdf", "layout", getApplication().getPackageName())); 
-    PDFView pdfView = (PDFView) findViewById(R.id.pdfView);
+    PDFView pdfView = (PDFView) findViewById( getApplication().getResources().getIdentifier("pdfView", "id", getApplication().getPackageName()) );
     try {
       Intent intent = getIntent();
       String fileUrl = intent.getStringExtra("FileUrl");
