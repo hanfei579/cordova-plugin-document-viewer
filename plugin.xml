@@ -46,7 +46,7 @@
                   
 
         </config-file>
-		
+			<source-file src="src/android/layout/activity_pdf.xml" target-dir="res/layout" />
         <source-file
             src="src/android/citcc/pdf/PdfActivity.java"
             target-dir="src/com/citcc/pdf"/>
