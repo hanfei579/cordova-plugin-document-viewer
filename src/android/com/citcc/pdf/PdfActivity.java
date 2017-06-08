@@ -5,8 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
-import com.github.barteksc.pdfviewer.PDFView;
-import com.ionicframework.tower845732.R;
+import com.github.barteksc.pdfviewer.PDFView; 
 
 /**
  * Created by Administrator on 2017/6/8 0008.
@@ -20,7 +19,7 @@ public class PdfActivity extends Activity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_pdf);
+	setContentView(getApplication().getResources().getIdentifier("activity_pdf", "layout", getApplication().getPackageName())); 
     PDFView pdfView = (PDFView) findViewById(R.id.pdfView);
     try {
       Intent intent = getIntent();
